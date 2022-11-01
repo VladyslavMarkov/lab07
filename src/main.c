@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     int x,y;
     char *c;
-    long int t = strtol(argv[0], &c, 10);
+    long int t;
     
     
     
@@ -18,15 +18,19 @@ int main(int argc, char *argv[])
     y = rand() % (x-1);    
     lab05(x, y);   
      
-    if(t < 1000 || t > 9999 || argc == 0)
+    if(argc > 1)
     {
-     // lab06(t);
-    //}
-    //else
-    //{
-     // t = 5000;
+      t = strtol(argv[1], &c, 10);
+      if(t > 1000 && t < 9999)
+      {
       lab06(t);
-      printf("%s", argv[0]);
+      }
+    }
+    else
+    {
+      t = 5000;
+      lab06(t);
+      
     }
     
     return 0;
