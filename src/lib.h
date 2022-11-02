@@ -1,2 +1,2 @@
-void lab05(int a, int b);
-void lab06(long int k);
+int lab05(int a, int b);
+int lab06(long int k);
