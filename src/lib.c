@@ -1,7 +1,6 @@
 #include<stdio.h>
 
-
-void lab05(a, b)
+int lab05(a, b)
 {
    int i, max = 0;
    
@@ -18,10 +17,11 @@ void lab05(a, b)
           max = b;      
        }      
    }
-   printf("%d\n", max);
+   
+   return 0;
 }
 
-void lab06(k)
+int lab06(k)
 {
     int A[9999],sum1,sum2,n1,n2,n3,n4,n = 0,i;
     
@@ -45,5 +45,5 @@ void lab06(k)
         k++;
     }
     
-    printf("%d", n);
+    return 0;
 }

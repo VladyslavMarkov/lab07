@@ -7,16 +7,15 @@
 
 int main(int argc, char *argv[])
 {
-    int x,y;
+    long int t = 5000;
+    int x, y, res1, res2, res[9999];
     char *c;
-    long int t;
-    
-    
-    
+       
     srand((unsigned int)time(NULL));
     x = rand() % 100; 
     y = rand() % (x-1);    
-    lab05(x, y);   
+    lab05(x, y); 
+      
      
     if(argc > 1)
     {
@@ -27,10 +26,8 @@ int main(int argc, char *argv[])
       }
     }
     else
-    {
-      t = 5000;
-      lab06(t);
-      
+    {    
+      lab06(t);     
     }
     
     return 0;
